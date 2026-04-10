@@ -36,6 +36,10 @@ app.use(cors(corsOptions));
 //   photos: ["https://example.com/hotel1-photo1.jpg", "https://example.com/hotel1-photo2.jpg"],
 // };
 
+app.get("/",(req,res)=>{
+    res.send("Hello.")
+})
+
 const newHotel2 = {
   name: "Sunset Resort",
   category: "Resort",
